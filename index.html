@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="root">
+      <h1 :style="'color:' + titleColor">{{message}}</h1>
+
+      <label for="title-color">Cambia colore al titolo</label>
+
+      <input name="title-color" v-model="titleColor">
+
+      <label for="img">Cambia l'immagine inserendo un url</label>
+
+      <input name="img" v-model="img">
+
+      <img :src="img" alt="">
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
